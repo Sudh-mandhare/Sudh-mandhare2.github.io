@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+header{
+
+}
+
+section{
+   width: 100%;
+}
+nav{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FF5F1F;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+
+a:hover{
+   background-color:black;
+}
+
+
+.divleft{
+    width: 30% ;
+    background-color: #FF5F1F;
+    margin: 3em;
+    margin-left : 4em;
+}
+
+.divright{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1em;
+    margin-right: 1em;
+    
+}
+
+#homenav,#aboutnav,#projectnav,#contactnav{
+   background-color: #FF5F1F;
+   margin: 1em;
+   align-self: center;
+   padding: 0.7em;
+   border: 0.1em solid white;
+   color: black;
+}
+
+.class{
+
+}
+
+.home{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+
+}
+
+.divlefthome{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+    margin: 3em;
+    padding: auto;
+    margin-left: 13em;
+    transform: translateY(50%);
+
+}
+
+ #home_l_upper{
+    height: 60%;
+    text-align: center;
+    font-size: 4rem;
+ }
+
+ #home_l_lower{
+    text-align: center;
+ }
+
+ .divrighthome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8em;
+ }
+
+ #aboutcontent{
+   height: 20vh;
+   margin: 0 5em;
+   color: #74ee15;
+ }
+
+ .about{
+    height: 80vh;
+    display: flex;
+    margin: 0 5em;
+ }
+
+
+
+ .divleftabout{
+    width: 65%;
+    text-align: center;
+ }
+
+ #hii{
+   text-align: left;
+ }
+ .divrightabout{
+    background-color:yellow;
+    border-radius: 20em;
+    width: 30%;
+    height: 40%;
+
+    
+ }
+
+ .divrightabout > img{
+   
+   transform: translate(8rem,4rem);
+
+   
+ }
+ 
+ #project{        /*1*/
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+ .project{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    gap: 5rem;
+    margin:  0 5em;
+    flex-wrap: wrap;
+ }
+ 
+ .projectc{       /*2*/
+   display: flex;
+   justify-content: space-around;
+   margin :4em;
+   height: 100%;
+
+ }
+ #projectcontent{       /*2*/
+    height: 10%;
+    margin: 0 5em;
+    color: #74ee15;
+    
+ }
+
+ #project1,#project2{         /*3*/
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 30%;
+    justify-content: center;
+    gap: 2em;
+ }
+
+
+
+ .image{                      /*4*/
+   width: 100%;
+ }
+ /* .ogimage{
+   filter: grayscale(100%);
+   filter: blur(5%);
+   position: absolute;
+   z-index: -1;
+ } */
+
+ /* .layer{
+   /* max-height: 0%;
+   overflow: hidden; */
+   /* position: absolute;
+   
+   
+ } */ 
+
+ .info{                    /*4*/
+   width: 90%;
+   text-align: center;
+   transform: translateX(5%);
+   
+   padding: 3em;
+   
+   border-radius: 3rem;
+ }
+
+ /* .hiddentext{
+   text-align: center;
+   padding: 3em;
+   position: absolute;
+   overflow: hidden;
+   
+ } */
+
+ .contactdiv{
+    height: 65vh;
+    background-color: black;
+    margin: 2em;
+ }
+
+ footer{
+    
+ }
+
+ .contactdiv{
+   display: flex;
+   width: 100%;
+ }
+.divleftcontact{
+   width: 60%;
+}
+
+.divrightcontact{
+   display: flex;
+   flex-direction: column;
+   transform: translateX(-9rem);
+}
+
+table,td{
+   padding: 1em;
+   text-align: left;
+   border-color: aqua;
+   border-collapse: collapse;
+
+}
+tr{
+   padding: 0.1em;
+}
+
+#rightcontactupper{
+   height: 50%;
+   display: flex;
+   
+}
+
+#rightcontactlower{
+   color: #74ee15;
+   text-align: center;
+}
+
+footer{
+   height: 35vh;
+   background-color: #FF5F1F;
+}
+
+.footeraddress{
+   width: 33%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 4rem;
+   align-content: space-evenly
+}
+
+.footerphone{
+   width: 33%;
+   display: flex;
+   justify-content: center;
+   gap: 4rem;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.footersocial{
+   width: 33%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   margin-top: 1em;
+   
+}
+
+#footer{
+   display: flex;
+
+   height: 100%;
+}
+
+@media (max-width:1200px){
+   .body{
+      font-size : 12 rem;
+      flex-direction: column;
+      
+   }
+
+   
+      .home{
+         flex-direction: column;
+      }
+   
+      .about{
+         flex-direction: column;
+      }
+      .projectc{
+         flex-direction: column;
+      }
+
+      .contactdiv{
+         flex-direction: column;
+      }
+
+      #project1,#project2{
+         width: 100%;
+      }
+
+      .divleftcontact{
+         width: 100%;
+      }
+
+      table{
+         width: 100%;
+         margin-left: 3rem;
+
+      }
+
+      .divrightcontact{
+         width: 100%;
+         transform: translate(13rem,14rem);
+         margin-top: 5rem;
+         display: flex;
+         flex-direction: column;
+      }
+      #rightcontactlower{
+         text-align: left;
+         margin-top: 4rem;
+      }
+
+      .contactdiv{
+         align-items: center;
+      }
+
+      #footer{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;  
+         align-items: center; 
+         gap: 3rem;
+            
+      }
+
+      .footersocial{
+         display: flex;
+         flex-direction: row;
+      }
+
+      .footeraddress,.footerphone{
+         gap: 2rem;
+      }
+
+      #aboutcontent{
+         height:100%;
+         font-size: 3rem;
+         text-align: center;
+
+      }
+
+      .about{
+         margin-top: 5rem;
+      }
+
+      .divleftabout{
+         width: 100%;
+      }
+
+      .divrightabout{
+         width: 100%;
+         margin-top: 6rem;
+
+      }
+
+      #projectcontent{
+         width: 100%;
+         font-size: 4rem;
+         margin: 0;
+         text-align: center;
+      }
+
+      .projectc{
+         width: 100%;
+      }
+      #project1{
+         width: 100%;
+      }
+      .info{
+         font-size: 2rem;
+         width: 100%;
+      }
+      
+      .divleftabout{
+         width: 100%;
+         font-size: 2rem;
+      }
+      section{
+         width: 100%;
+      }
+
+      /* .divright{
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+         width: 20%;
+         align-items: center;
+         
+         
+      } */
+      nav {
+         display: flex;
+         flex-direction: column;
+      }
+
+   }
+
+
+
+
